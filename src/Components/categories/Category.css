@@ -1,0 +1,25 @@
+.category-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.allcategorylist {
+  width: 30%;
+}
+.category-containeror {
+  width: 70%;
+  margin-top: 2%;
+  padding-top: 2%;
+  border-radius: 1px solid black;
+}
+.product-Desc {
+  display: flex;
+  width: 50%;
+  height: 40%;
+  margin: 30px;
+  border-radius: 10px;
+}
+.category-image {
+  width: 120px;
+  height: 80px;
+}
