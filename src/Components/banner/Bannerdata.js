@@ -1,15 +1,15 @@
 const Bannerdata = [
   {
     image: "assets/images/11.jpg",
-    text: "Buy Rice Products Are Now On Line With Us",
+    text: "BUY RICE PRODUCTS ARE NOW ON LINE WITH US",
   },
   {
     image: "assets/images/22.jpg",
-    text: "Whole Spices Products Are Now On Line With Us",
+    text: "WHOLE SPICES PRODUCTS ARE NOW WITH US",
   },
   {
     image: "assets/images/44.jpg",
-    text: "Whole Spices Products Are Now available ",
+    text: "WHOLE SPICES PRODUCTS ARE NOW AVAILABLE ",
   },
 ];
 export default Bannerdata;
