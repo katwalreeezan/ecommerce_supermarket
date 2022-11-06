@@ -95,7 +95,7 @@ const Login = () => {
                     </p>
                   )}
                   <div class="forgot">
-                    <a href="#">Forgot Password?</a>
+                    <a href="/fpassword">Forgot Password?</a>
                   </div>
                   <input type="submit" value="Login" />
                 </form>

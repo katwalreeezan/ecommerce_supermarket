@@ -7,10 +7,14 @@
   width: 30%;
 }
 .category-containeror {
+  display: flex;
+  flex-wrap: wrap;
   width: 70%;
-  margin-top: 2%;
+  margin-top: 2.5rem !important;
   padding-top: 2%;
   border-radius: 1px solid black;
+  justify-content: space-around;
+  align-items: center;
 }
 .product-Desc {
   display: flex;
@@ -22,4 +26,7 @@
 .category-image {
   width: 120px;
   height: 80px;
+}
+.product-cart1 {
+  margin-bottom: 20px;
 }

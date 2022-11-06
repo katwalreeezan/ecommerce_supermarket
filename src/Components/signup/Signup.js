@@ -28,14 +28,9 @@ const Signup = () => {
       data.c_password !== "" &&
       data.password === data.c_password
     ) {
-      // setName(data.name);
-      // setPrice(data.price);
-      // setTag(data.tag);
-      // setShow(!show)
       toast.success("successfully submitted");
       reset();
       Navigate("/login");
-      // alert('successfully submitted')
     } else {
       toast.error("Fill form again");
     }
@@ -56,6 +51,7 @@ const Signup = () => {
       .then((response) => {
         console.log(response, "sucess");
         // setsignupData(data);
+        localStorage.setItem("signup_email", data.email);
 
         localStorage.setItem(
           "info",

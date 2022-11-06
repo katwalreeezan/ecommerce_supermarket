@@ -1,4 +1,4 @@
-.product-Desc {
+.product-Descc {
   /* background-color: yellow; */
   display: flex;
   justify-content: center;
@@ -6,19 +6,15 @@
   flex-direction: column;
 }
 .productPrice {
-  /* background-color: aqua; */
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 5px;
 }
 
-.product-cart {
-  padding: 20px;
+.product-cartt {
   flex-direction: column;
-
   width: 50%;
-  height: 90%;
-  /* background-color: aquamarine; */
+  height: 300px;
   margin-top: 10px;
 }
 .product-cart-top {

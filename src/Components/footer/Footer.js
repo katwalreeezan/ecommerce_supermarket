@@ -54,7 +54,11 @@ const Footer = () => {
                 </li>
                 <li>
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  <a href="products.html">Special Products</a>
+                  <a href="/privacypolicy">Privacy policy</a>
+                </li>
+                <li>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  <a href="/sellingoffer">Special Products</a>
                 </li>
               </ul>
             </div>
@@ -63,23 +67,23 @@ const Footer = () => {
               <ul class="info">
                 <li>
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  <a href="groceries.html">Groceries</a>
+                  <a href="/category">Groceries</a>
                 </li>
                 <li>
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  <a href="household.html">Household</a>
+                  <a href="/category">Household</a>
                 </li>
                 <li>
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  <a href="personalcare.html">Personal Care</a>
+                  <a href="/category">Personal Care</a>
                 </li>
                 <li>
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  <a href="packagedfoods.html">Packaged Foods</a>
+                  <a href="/category">Packaged Foods</a>
                 </li>
                 <li>
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  <a href="beverages.html">Beverages</a>
+                  <a href="/category">Beverages</a>
                 </li>
               </ul>
             </div>
@@ -88,7 +92,7 @@ const Footer = () => {
               <ul class="info">
                 <li>
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  <a href="products.html">Store</a>
+                  <a href="/product">Store</a>
                 </li>
                 <li>
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>

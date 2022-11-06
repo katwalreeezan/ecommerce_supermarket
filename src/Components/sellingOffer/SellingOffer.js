@@ -131,7 +131,7 @@ const SellingOffer = () => {
                       {sellingitem.map((data, index) => {
                         return (
                           <>
-                            <div class="col-md-4 top_brand_left product-cart">
+                            <div class="col-md-4 top_brand_left product-cartt">
                               <div class="hover14 column">
                                 <div class="agile_top_brand_left_grid">
                                   <div class="agile_top_brand_left_grid_pos">
@@ -141,7 +141,7 @@ const SellingOffer = () => {
                                       class="img-responsive"
                                     />
                                   </div>
-                                  <div class="product-Desc">
+                                  <div class="product-Descc">
                                     {data.images.map((imgdata, index) => {
                                       return (
                                         <>
@@ -212,7 +212,7 @@ const SellingOffer = () => {
                       {sellingitem.map((data1, index) => {
                         return (
                           <>
-                            <div class="col-md-4 top_brand_left product-cart">
+                            <div class="col-md-4 top_brand_left product-cartt">
                               <div class="hover14 column">
                                 <div class="agile_top_brand_left_grid">
                                   <div class="agile_top_brand_left_grid_pos">
@@ -222,7 +222,7 @@ const SellingOffer = () => {
                                       class="img-responsive"
                                     />
                                   </div>
-                                  <div class="product-Desc">
+                                  <div class="product-Descc">
                                     {data1.images.map((imgdata1, index) => {
                                       return (
                                         <>

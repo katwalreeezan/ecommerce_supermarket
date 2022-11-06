@@ -31,6 +31,7 @@ const SubBannerBottom = () => {
                 <img
                   className="image-slider"
                   src={dataa.image}
+                  style={{ marginTop: "10px" }}
                   //   alt=""
                   //   onClick={dataa.path}
                 />

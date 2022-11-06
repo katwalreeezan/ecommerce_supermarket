@@ -1,26 +1,39 @@
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
-import { collapseToast, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const ContactUs = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data, "contactus");
+    // console.log(data, "contactus");
     toast.success("Your query is recorded ");
 
     axios
-      .post("https://uat.ordering-farmshop.ekbana.net/api/v4/contact-us", {
-        headers: {
-          "Api-Key": "3uxpudnPFywb4AYZjjpbhOHRV3YMTNscyRF4AiVZi2go6brJMx",
+      .post(
+        "https://uat.ordering-farmshop.ekbana.net/api/v4/contact-us",
+        {
+          message: data.Message,
+          name: data.Name,
+          email: data.Email,
+          subject: data.Subject,
+          contact: data.Phone,
         },
-      })
+        {
+          headers: {
+            "Api-Key": "3uxpudnPFywb4AYZjjpbhOHRV3YMTNscyRF4AiVZi2go6brJMx",
+            "Warehouse-Id": "1",
+          },
+        }
+      )
       .then((response) => {
         console.log(response, "contact sucess");
+        reset();
       })
       .catch((error) => {
         console.log(error, "Contact failed");
@@ -29,7 +42,6 @@ const ContactUs = () => {
 
   return (
     <div>
-      {/* <button onClick={hitme}>hitme</button> */}
       <div class="breadcrumbs">
         <div class="container">
           <ol
@@ -126,6 +138,38 @@ const ContactUs = () => {
                 <label class="input__label input__label--ichiro" for="input-26">
                   <span class="input__label-content input__label-content--ichiro">
                     Your Email
+                  </span>
+                </label>
+              </span>
+              <span class="input input--ichiro">
+                <input
+                  {...register("Phone")}
+                  class="input__field input__field--ichiro"
+                  type="text"
+                  id="input-27"
+                  name="Phone"
+                  placeholder=" "
+                  required=""
+                />
+                <label class="input__label input__label--ichiro" for="input-27">
+                  <span class="input__label-content input__label-content--ichiro">
+                    Your Phone
+                  </span>
+                </label>
+              </span>
+              <span class="input input--ichiro">
+                <input
+                  {...register("Subject")}
+                  class="input__field input__field--ichiro"
+                  type="text"
+                  id="input-28"
+                  name="Subject"
+                  placeholder=" "
+                  required=""
+                />
+                <label class="input__label input__label--ichiro" for="input-28">
+                  <span class="input__label-content input__label-content--ichiro">
+                    Your Subject
                   </span>
                 </label>
               </span>
