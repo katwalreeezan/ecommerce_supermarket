@@ -39,13 +39,6 @@ const Router = () => {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
 
-          {/* privating routing for signup starts */}
-          {/* <Route
-            path="/login"
-            element={Auth ? <Login /> : <Navigate to="/signup" />}
-          /> */}
-          {/* privating routing for signup ends*/}
-
           <Route path="/category" element={<Categories />} />
 
           <Route path="/productlist" element={<GroceryCatlog />} />
