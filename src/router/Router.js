@@ -20,6 +20,7 @@ import MyCart from "../Components/mycart/MyCart";
 import AboutUs from "../view/aboutUs/AboutUs";
 import Checkout from "../view/checkout/Checkout";
 import Product from "../Components/productAll/Product";
+import BrandStore from "../Components/brandStore/BrandStore";
 
 const Router = () => {
   return (
@@ -51,6 +52,7 @@ const Router = () => {
           <Route path="/product" element={<Product />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
+        <BrandStore/>
         <Footer />
       </BrowserRouter>
     </div>
