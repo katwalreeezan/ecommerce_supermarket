@@ -16,7 +16,7 @@ const MyCart = () => {
   const Navigate = useNavigate();
   const cartselector = useSelector((state) => state.cart);
   const dispatch = useDispatch();
-  // function patudha hamile argument ni patunu paryo mapp garya ko name(cartitems) J xa tai hunxa passing value(cartitems)
+  
   const handleRemoveFromCart = (cartitems) => {
     dispatch(deleteItem(cartitems));
   };
@@ -59,16 +59,15 @@ const MyCart = () => {
                   <div>
                     <h3>{cartitems.title}</h3>
 
-                    {/* function patudha hamile argument ni patunu paryo mapp garya ko name(cartitems) 
-                    J xa tai hunxa passing value(cartitems) */}
+                    
                     <button onClick={() => handleRemoveFromCart(cartitems)}>
                       Remove
                     </button>
                   </div>{" "}
                 </div>
-                {/* need to double mapping to access sellingPrice inside unitPrice  */}
+               
                 {cartitems.unitPrice.map((newcartitems) => {
-                  //  for total price calculation
+                  
                   totalprice +=
                     newcartitems.sellingPrice * cartitems.cartQuantity;
                   return (
@@ -92,18 +91,7 @@ const MyCart = () => {
                   );
                 })}
 
-                {/* <div className="cart-product-quantity">
-                  <button onClick={() => handleDecreaseitem(cartitems)}>
-                    -
-                  </button>
-                  <div className="count">{cartitems.cartQuantity}</div>
-                  <button onClick={() => handleIncreaseitem(cartitems)}>
-                    +
-                  </button>
-                </div> */}
-                {/* <div className="cart-product-total-price">
-                  ${cartitems.price * cartitems.cartQuantity}
-                </div> */}
+               
               </div>
             ))}
           </div>

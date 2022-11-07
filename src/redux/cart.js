@@ -33,7 +33,7 @@ const cartSlice = createSlice({
         state.cartitem.push(tempProduct);
       }
       localStorage.setItem("CartitemInfo", JSON.stringify(state.cartitem));
-      // poopin notification using toastify
+    
       toast.success(`${action.payload.title} added successfully`, {
         position: "top-right",
       });
@@ -48,7 +48,7 @@ const cartSlice = createSlice({
       localStorage.setItem("CartitemInfo", JSON.stringify(state.cartitem));
     },
 
-    // to delete an item from the cart
+    // delete an item from the cart
     deleteItem(state, action) {
       const nextCartItem = state.cartitem.filter(
         (cartRemoveItem) => cartRemoveItem.id !== action.payload.id
