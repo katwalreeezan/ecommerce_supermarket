@@ -26,7 +26,7 @@ const cartSlice = createSlice({
         state.cartitem[itemIndex].cartQuantity += 1;
 
         toast.info(` ${action.payload.title}'s Quantity increased`, {
-          position: "top-right",
+          position: "top-left",
         });
       } else {
         const tempProduct = { ...action.payload, cartQuantity: 1 };
@@ -35,7 +35,7 @@ const cartSlice = createSlice({
       localStorage.setItem("CartitemInfo", JSON.stringify(state.cartitem));
     
       toast.success(`${action.payload.title} added successfully`, {
-        position: "top-right",
+        position: "top-left",
       });
     },
 
@@ -43,7 +43,7 @@ const cartSlice = createSlice({
     clearCart(state, action) {
       state.cartitem = [];
       toast.error(`ALL items are cleared`, {
-        position: "top-right",
+        position: "top-left",
       });
       localStorage.setItem("CartitemInfo", JSON.stringify(state.cartitem));
     },
@@ -57,7 +57,7 @@ const cartSlice = createSlice({
       localStorage.setItem("CartitemInfo", JSON.stringify(state.cartitem));
       // send notification in topright with item title
       toast.error(`${action.payload.title} removed successfully`, {
-        position: "top-right",
+        position: "top-left",
       });
     },
 

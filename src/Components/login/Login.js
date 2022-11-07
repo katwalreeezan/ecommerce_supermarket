@@ -25,7 +25,7 @@ const Login = () => {
     axios
 
       .post("https://uat.ordering-farmshop.ekbana.net/api/v4/auth/login", {
-        // body ko Element asare send garne
+        
         client_id: "2",
         client_secret: "2TJrcyMbXT6gDQXVqeSlRbOKvtTfMsuxfuK6vpey",
         grant_type: "password",
@@ -34,7 +34,7 @@ const Login = () => {
       })
       .then((response) => {
         console.log(response, "loginSuccess");
-        // tyo bata aako response(access_token) lai localStorage ma save garne
+      
         localStorage.setItem("access_token", response.data.access_token);
       })
       .catch((error) => {
