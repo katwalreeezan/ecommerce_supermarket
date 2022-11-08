@@ -50,45 +50,7 @@ const Categories = () => {
           <div className="allcategorylist">
             <GroceryCatlog />
           </div>
-          <div className="category-containeror">
-            {catagorylist.slice(0, 6).map((data, index) => {
-              return (
-                <>
-                  <div class="col-md-4 top_brand_left product-cart1">
-                    <div class="hover14 column">
-                      <div class="agile_top_brand_left_grid">
-                        <div class="agile_top_brand_left_grid_pos">
-                          <img
-                            src="assets/images/offer.png"
-                            alt=" "
-                            class="img-responsive"
-                          />
-                        </div>
-                        <div className="product-Desc">
-                          <img
-                            src={data.backgroundImage}
-                            className="category-image"
-                          />
-                          <p>{data.title}</p>
-
-                          <p>ProductCount: {data.productCount}</p>
-                          <div class="snipcart-details top_brand_home_details">
-                            <input
-                              onClick={() => handleAddToCart()}
-                              type="submit"
-                              name="submit"
-                              value="Details"
-                              class="button"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              );
-            })}
-          </div>
+         
         </div>
       )}
     </>
