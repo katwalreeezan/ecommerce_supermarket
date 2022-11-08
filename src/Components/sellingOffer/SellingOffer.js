@@ -155,19 +155,17 @@ const SellingOffer = () => {
                                       );
                                     })}
 
-                                    <p>ItemName:{data.title}</p>
-                                    <p>Category: {data.categoryTitle}</p>
+                                    <p>{data.title}</p>
+                                    <p>{data.categoryTitle}</p>
 
                                     {data.unitPrice.map((pricedata, index) => {
                                       return (
                                         <>
                                           <p>
-                                            SellingPrice:
+                                            $
                                             {pricedata.sellingPrice}
                                           </p>
-                                          <p>
-                                            MarkedPrice: {pricedata.markedPrice}
-                                          </p>
+                                          
                                         </>
                                       );
                                     })}
@@ -236,21 +234,18 @@ const SellingOffer = () => {
                                       );
                                     })}
 
-                                    <p>ItemName:{data1.title}</p>
-                                    <p>Category: {data1.categoryTitle}</p>
+                                    <p>{data1.title}</p>
+                                    <p> {data1.categoryTitle}</p>
 
                                     {data1.unitPrice.map(
                                       (pricedata1, index) => {
                                         return (
                                           <>
                                             <p>
-                                              SellingPrice:{" "}
+                                              $:{" "}
                                               {pricedata1.sellingPrice}
                                             </p>
-                                            <p>
-                                              MarkedPrice:{" "}
-                                              {pricedata1.markedPrice}
-                                            </p>
+                                            
                                           </>
                                         );
                                       }

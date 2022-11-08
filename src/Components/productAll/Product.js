@@ -104,7 +104,7 @@ const Product = () => {
                                 SellingPrice:
                                 {pricedata.sellingPrice}
                               </p>
-                              <p>MarkedPrice: {pricedata.markedPrice}</p>
+                              
                             </>
                           );
                         })}

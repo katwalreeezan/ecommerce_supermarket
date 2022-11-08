@@ -52,7 +52,6 @@ const Router = () => {
           <Route path="/product" element={<Product />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
-        <BrandStore/>
         <Footer />
       </BrowserRouter>
     </div>
