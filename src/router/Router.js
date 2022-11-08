@@ -13,14 +13,13 @@ import AdvertiseOffer from "../view/advertiseOffer/AdvertiseOffer";
 import ShortCodes from "../Components/shortCodes/ShortCodes";
 import FAQ from "../Components/faq/FAQ";
 import Categories from "../Components/categories/Categories";
-import NotFound from "../Components/notFound/NotFound";
+
 
 import GroceryCatlog from "../Components/grocery/GroceryCatlog";
 import MyCart from "../Components/mycart/MyCart";
 import AboutUs from "../view/aboutUs/AboutUs";
 import Checkout from "../view/checkout/Checkout";
 import Product from "../Components/productAll/Product";
-import BrandStore from "../Components/brandStore/BrandStore";
 
 const Router = () => {
   return (
@@ -48,7 +47,6 @@ const Router = () => {
 
           <Route path="/shortcodes" element={<ShortCodes />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/*" element={<NotFound />} />
           <Route path="/product" element={<Product />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
