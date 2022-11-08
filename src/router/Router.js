@@ -1,22 +1,22 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Header from "../Components/header/Header";
+import Header from "../Components/headersection/Header";
 import Footer from "../Components/footer/Footer";
 import Home from "../view/home/Home";
-import Navbar from "../Components/navbar/Navbar";
+import Navbar from "../Components/navbarsection/Navbar";
 import SubHeader from "../Components/subHeader/SubHeader";
-import Login from "../Components/login/Login";
+import Login from "../Components/loginsection/Login";
 import Signup from "../Components/signup/Signup";
 import ContactUs from "../Components/contactUs/ContactUs";
 import AdvertiseOffer from "../view/advertiseOffer/AdvertiseOffer";
 
 import ShortCodes from "../Components/shortCodes/ShortCodes";
-import FAQ from "../Components/faq/FAQ";
-import Categories from "../Components/categories/Categories";
+import FAQ from "../Components/frequentlyaskedQA/FAQ";
+import Categories from "../Components/allcategory/Categories";
 
 
 import GroceryCatlog from "../Components/grocery/GroceryCatlog";
-import MyCart from "../Components/mycart/MyCart";
+import MyCart from "../Components/mycartsection/MyCart";
 import AboutUs from "../view/aboutUs/AboutUs";
 import Checkout from "../view/checkout/Checkout";
 import Product from "../Components/productAll/Product";

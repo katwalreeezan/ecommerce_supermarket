@@ -1,6 +1,6 @@
 import React from "react";
 import DelivaryAddress from "../../Components/delivaryAddress/DelivaryAddress";
-import Payment from "../../Components/payment/Payment";
+import Payment from "../../Components/paymentpart/Payment";
 
 const Checkout = () => {
   return (

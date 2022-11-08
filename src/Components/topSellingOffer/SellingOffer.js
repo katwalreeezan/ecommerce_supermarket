@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import sellingData from "./sellingData";
 import "./sellingOffer.css";
-// import sellingData1 from "./sellingData2";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart";

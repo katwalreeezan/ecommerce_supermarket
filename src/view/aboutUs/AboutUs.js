@@ -1,6 +1,6 @@
 import React from "react";
-import AboutDetail from "../../Components/aboutDetail/AboutDetail";
-import AboutSlider from "../../Components/aboutSlider/AboutSlider";
+import AboutDetail from "../../Components/Detailpage/AboutDetail";
+import AboutSlider from "../../Components/Sliderpage/AboutSlider";
 import MeetOurTeam from "../../Components/meetOurTeam/MeetOurTeam";
 import Testimonial from "../../Components/testimonial/Testimonial";
 

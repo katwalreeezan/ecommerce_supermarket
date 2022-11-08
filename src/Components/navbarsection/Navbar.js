@@ -7,7 +7,7 @@ import {
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
 
-import MyCart from "../mycart/MyCart";
+import MyCart from "../mycartsection/MyCart";
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
