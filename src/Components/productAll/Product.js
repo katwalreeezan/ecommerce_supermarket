@@ -3,7 +3,7 @@ import axios from "axios";
 import "./product.css";
 // import "../sellingOffer/sellingOffer.css";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../../redux/cart";
+import { addToCart } from "../../reactredux/cart";
 import { useNavigate } from "react-router-dom";
 
 const Product = () => {

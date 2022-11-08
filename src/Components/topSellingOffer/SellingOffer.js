@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./sellingOffer.css";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../../redux/cart";
+import { addToCart } from "../../reactredux/cart";
 
 const SellingOffer = () => {
   const Navigate = useNavigate();

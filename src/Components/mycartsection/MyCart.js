@@ -9,7 +9,7 @@ import {
   increaseQuantity,
   decreaseQuantity,
   clearCart,
-} from "../../redux/cart";
+} from "../../reactredux/cart";
 
 const MyCart = () => {
   var totalprice = 0;
