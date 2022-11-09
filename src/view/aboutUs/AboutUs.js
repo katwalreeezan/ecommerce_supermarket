@@ -1,5 +1,5 @@
 import React from "react";
-import AboutDetail from "../../Components/Detailpage/AboutDetail";
+import Detailpage from "../../Components/Detailpage/Detailpage";
 import AboutSlider from "../../Components/Sliderpage/AboutSlider";
 import MeetOurTeam from "../../Components/meetOurTeam/MeetOurTeam";
 import Testimonial from "../../Components/testimonial/Testimonial";
@@ -14,7 +14,7 @@ const AboutUs = () => {
         }}
       >
         <div style={{ width: "40%" }}>
-          <AboutDetail />
+          <Detailpage />
         </div>
         <div style={{ width: "100%", marginLeft: "280px", marginTop: "350px" }}>
           <Testimonial />
