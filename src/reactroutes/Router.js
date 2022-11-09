@@ -22,7 +22,7 @@ const Router = () => {
         <Header />
         <SecHeader />
         <Routes>
-          //static route
+           (//static route)
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<Navigate replace to="/home" />} />
           <Route path="/aboutus" element={<AboutUs />} />

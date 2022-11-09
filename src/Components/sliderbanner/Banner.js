@@ -26,7 +26,6 @@ const Banner = () => {
     });
 
   const settings = {
-    // dots: true,
     infinite: true,
     speed: 1500,
     slidesToShow: 1,

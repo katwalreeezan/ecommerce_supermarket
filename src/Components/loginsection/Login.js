@@ -5,42 +5,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
-  const Navigate = useNavigate();
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm();
+  
 
-  const onsubmit = (data) => {
-    if (data.email !== "" && data.password !== "") {
-      toast.success("Login Sucessfull");
-      reset();
-      Navigate("/");
-    } else {
-      toast.error("Sorry login failed");
-    }
-
-    axios
-
-      .post("https://uat.ordering-farmshop.ekbana.net/api/v4/auth/login", {
-        
-        client_id: "2",
-        client_secret: "2TJrcyMbXT6gDQXVqeSlRbOKvtTfMsuxfuK6vpey",
-        grant_type: "password",
-        username: data.email,
-        password: data.password,
-      })
-      .then((response) => {
-        console.log(response, "loginSuccess");
-      
-        localStorage.setItem("access_token", response.data.access_token);
-      })
-      .catch((error) => {
-        console.log(error, "loginfailed");
-      });
-  };
   return (
     <>
       <div>
@@ -73,27 +39,19 @@ const Login = () => {
                 class="login-form-grids animated wow slideInUp"
                 data-wow-delay=".5s"
               >
-                <form onSubmit={handleSubmit(onsubmit)}>
+                <form onSubmit={""}>
                   <input
-                    {...register("email", { required: true })}
+                    
                     type="email"
                     placeholder="Email Address"
                   />
-                  {errors.email && (
-                    <p style={{ color: "red", fontSize: "14px" }}>
-                      Enter your valid emailaddress
-                    </p>
-                  )}
+                 
                   <input
-                    {...register("password")}
+                    
                     type="password"
                     placeholder="Password"
                   />
-                  {errors.password && (
-                    <p style={{ color: "red", fontSize: "14px" }}>
-                      Enter your password
-                    </p>
-                  )}
+                 
                   <div class="forgot">
                     <a href="/fpassword">Forgot Password?</a>
                   </div>
