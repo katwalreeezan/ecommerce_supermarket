@@ -15,7 +15,7 @@ import FAQ from "../Components/frequentlyaskedQA/FAQ";
 import Categories from "../Components/allcategory/Categories";
 
 
-import GroceryCatlog from "../Components/grocery/GroceryCatlog";
+import GroceryList from "../Components/groceryItem/GroceryList";
 import MyCart from "../Components/mycartsection/MyCart";
 import AboutUs from "../view/aboutUs/AboutUs";
 import Checkout from "../view/checkout/Checkout";
@@ -41,7 +41,7 @@ const Router = () => {
 
           <Route path="/category" element={<Categories />} />
 
-          <Route path="/productlist" element={<GroceryCatlog />} />
+          <Route path="/productlist" element={<GroceryList />} />
 
           <Route path="/mycart" element={<MyCart />} />
 
