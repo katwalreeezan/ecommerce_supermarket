@@ -1,6 +1,4 @@
 import React from "react";
-import BrandStoreData from "./BrandStoreData";
-import "./BrandStore.css";
 
 const BrandStore = () => {
   return (

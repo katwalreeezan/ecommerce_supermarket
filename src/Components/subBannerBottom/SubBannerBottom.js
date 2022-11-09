@@ -2,15 +2,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SubBannerButtomData from "./SubBannerBottomData";
-import { Link, Navigate } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+
 
 const SubBannerBottom = () => {
-  //   const RouterNavigate = useNavigate();
-  //   const NavigateHAND = () => {
-  //     RouterNavigate("/signup");
-  //     console.log("hello");
-  //   };
+  
   const settings = {
     dots: true,
     infinite: true,

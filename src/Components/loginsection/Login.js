@@ -15,7 +15,7 @@ const Login = () => {
 
   const onsubmit = (data) => {
     if (data.email !== "" && data.password !== "") {
-      toast.success("Login Sucessfully");
+      toast.success("Login Sucessfull");
       reset();
       Navigate("/");
     } else {

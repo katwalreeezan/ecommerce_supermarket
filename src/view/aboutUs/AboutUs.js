@@ -2,7 +2,8 @@ import React from "react";
 import Detailpage from "../../Components/Detailpage/Detailpage";
 import AboutSlider from "../../Components/Sliderpage/AboutSlider";
 import MeetOurTeam from "../../Components/meetOurTeam/MeetOurTeam";
-import Testimonial from "../../Components/testimonial/Testimonial";
+import Testimonial from "../../Components/testimonialsection/Testimonial";
+
 
 const AboutUs = () => {
   return (
@@ -10,14 +11,13 @@ const AboutUs = () => {
       <div
         style={{
           display: "flex",
-          //   justifyContent: "space-around",
         }}
       >
         <div style={{ width: "40%" }}>
           <Detailpage />
         </div>
         <div style={{ width: "100%", marginLeft: "280px", marginTop: "350px" }}>
-          <Testimonial />
+          <Testimonial/>
         </div>
       </div>
 

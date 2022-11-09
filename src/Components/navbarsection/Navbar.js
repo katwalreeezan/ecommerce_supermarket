@@ -7,7 +7,6 @@ import {
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
 
-import MyCart from "../mycartsection/MyCart";
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -51,7 +50,6 @@ const Navbar = () => {
                 <ModalContent>
                   <ModalCloseButton />
                   <ModalBody>
-                    <MyCart />
                   </ModalBody>
                 </ModalContent>
               </Modal>

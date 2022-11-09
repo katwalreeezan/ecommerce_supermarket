@@ -5,13 +5,11 @@ import Home from "../view/home/Home";
 import FAQ from "../Components/frequentlyaskedQA/FAQ";
 import Categories from "../Components/allcategory/Categories";
 import GroceryList from "../Components/groceryItem/GroceryList";
-import MyCart from "../Components/mycartsection/MyCart";
 import AboutUs from "../view/aboutUs/AboutUs";
-import Checkout from "../view/checkout/Checkout";
-import Product from "../Components/productAll/Product";
 import Navbar from "../Components/navbarsection/Navbar";
 import SecHeader from "../Components/secHeader/SecHeader";
 import Login from "../Components/loginsection/Login";
+import ShortCodes from "../Components/shortCodes/ShortCodes";
 import Signup from "../Components/signup/Signup";
 import ContactUs from "../Components/contactUs/ContactUs";
 import Footer from "../Components/footer/Footer";
@@ -24,6 +22,7 @@ const Router = () => {
         <Header />
         <SecHeader />
         <Routes>
+          //static route
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<Navigate replace to="/home" />} />
           <Route path="/aboutus" element={<AboutUs />} />
@@ -34,11 +33,8 @@ const Router = () => {
           <Route path="/category" element={<Categories />} />
 
           <Route path="/productlist" element={<GroceryList />} />
-
-          <Route path="/mycart" element={<MyCart />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/shortcodes" element={<ShortCodes />} />
         </Routes>
         <Footer />
       </BrowserRouter>
