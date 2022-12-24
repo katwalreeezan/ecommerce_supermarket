@@ -1,9 +1,8 @@
 import React from "react";
-import Detailpage from "../../Components/Detailpage/Detailpage";
-import AboutSlider from "../../Components/Sliderpage/AboutSlider";
+import AboutDetail from "../../Components/aboutDetail/AboutDetail";
+import AboutSlider from "../../Components/aboutSlider/AboutSlider";
 import MeetOurTeam from "../../Components/meetOurTeam/MeetOurTeam";
-import Testimonial from "../../Components/testimonialsection/Testimonial";
-
+import Testimonial from "../../Components/testimonial/Testimonial";
 
 const AboutUs = () => {
   return (
@@ -11,13 +10,14 @@ const AboutUs = () => {
       <div
         style={{
           display: "flex",
+          //   justifyContent: "space-around",
         }}
       >
         <div style={{ width: "40%" }}>
-          <Detailpage />
+          <AboutDetail />
         </div>
         <div style={{ width: "100%", marginLeft: "280px", marginTop: "350px" }}>
-          <Testimonial/>
+          <Testimonial />
         </div>
       </div>
 

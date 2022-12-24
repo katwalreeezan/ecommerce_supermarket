@@ -52,10 +52,7 @@ const Footer = () => {
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
                   <a href="/faq">FAQ's</a>
                 </li>
-                <li>
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  <a href="/privacypolicy">Privacy policy</a>
-                </li>
+
                 <li>
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
                   <a href="/sellingoffer">Special Products</a>

@@ -1,8 +1,8 @@
 import React from "react";
-import Banner from "../../Components/sliderbanner/Banner";
-import BannerBottom from "../../Components/bottomBanner/BannerBottom";
+import Banner from "../../Components/banner/Banner";
+import BannerBottom from "../../Components/bannerBottom/BannerBottom";
 import BrandStore from "../../Components/brandStore/BrandStore";
-import SellingOffer from "../../Components/topSellingOffer/SellingOffer";
+import SellingOffer from "../../Components/sellingOffer/SellingOffer";
 import SubBannerBottom from "../../Components/subBannerBottom/SubBannerBottom";
 
 const Home = () => {
@@ -10,9 +10,10 @@ const Home = () => {
     <div>
       <Banner />
       <SellingOffer />
+
+      {/* <BrandStore /> */}
       <SubBannerBottom />
       <BannerBottom />
-      <BrandStore />
     </div>
   );
 };
